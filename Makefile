@@ -1,18 +1,8 @@
-OBJS := \
-	main.o \
+output: main.o
+	g++ main.o -o output
 
-
-OUTFILE := cc-validator
-
-.PHONY: all clean
-
-all: $(OUTFILE)
-
-$(OBJS): %.o: %.cpp
-	g++ -c -Wall -std=c++14 $< -o $@
-
-$(OUTFILE): $(OBJS)
-	g++ $(OBJS) -o $(OUTFILE)
+main.o: main.cpp
+	g++ -c main.cpp
 
 clean:
-	rm -f *.o $(OUTFILE)
+	rm *.o output
