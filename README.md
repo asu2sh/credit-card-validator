@@ -1,2 +1,2 @@
 # credit-card-validator
-This program uses the Luhn Algorithm to validate a CC number. The program works for all popular cards like Visa, Amex, MasterCard etc.
+This program uses the __Luhn Algorithm__ to validate a _CC_ number. The program works for all popular cards like _Visa, Amex, MasterCard_.
